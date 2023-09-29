@@ -1,5 +1,25 @@
 # Python Shorthand Researching
 
+## Python with vscode
+
+### Auto formatting file after save
+
+> .vscode/setting.json
+
+```JSON
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.unusedImports": true
+        },
+    },
+    "isort.args":["--profile", "black"]
+}
+```
+
 ## Python in Game
 
 * [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)
