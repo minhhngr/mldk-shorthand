@@ -34,3 +34,7 @@
 
 * [Getting started with Python in Excel](https://support.microsoft.com/en-us/office/getting-started-with-python-in-excel-a33fbcbe-065b-41d3-82cf-23d05397f53d)
 * [Python in Excel DataFrames](https://support.microsoft.com/en-us/office/python-in-excel-dataframes-a10495b2-8372-4f0f-9179-32771fe0dc04)
+
+## Python is Testing
+
+* [What Is Hypothesis Testing? Types and Python Code Example](https://www.freecodecamp.org/news/what-is-hypothesis-testing/?ref=dailydev)

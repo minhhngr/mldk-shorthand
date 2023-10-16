@@ -1,3 +1,9 @@
+# Virtual Environment
 .venv
+
+# Code Editor
 .DS_Store
 .vscode
+
+# PyTest 
+__pycache__ 

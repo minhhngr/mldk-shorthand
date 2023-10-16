@@ -1,3 +1,4 @@
+pytest
 pycryptodome
 requests
 colorlog

@@ -41,7 +41,7 @@ while count < NUMBER_EMAIL:
     msg['To']         = RECEIVER_EMAIL
     msg['Subject']    = SUBJECT
     msg['Message-ID'] = str(uuid.uuid4())
-    msg['Date']       = f"{_timezone()} {get_current_time('%a, %-d %b %Y %H:%M:%S')}"
+    msg['Date']       = f"{get_current_time('%a, %-d %b %Y %H:%M:%S')} {_timezone()}"
     msg.attach(MIMEText(BODY, 'plain'))
 
     try:
