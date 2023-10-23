@@ -20,6 +20,10 @@
 }
 ```
 
+## Python in Config
+
+* [Python TOML](https://realpython.com/python-toml/)
+
 ## Python in Game
 
 * [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/)

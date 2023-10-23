@@ -232,6 +232,7 @@ git config
 
 ## Ref
 
+* [Github CLI](https://cli.github.com/)
 * [Hướng dẫn về git cho người mới bắt đầu](https://backlog.com/git-tutorial/vn/)
 * [Getting Started With Git and GitHub in Your Python Projects](https://blog.martinfitzpatrick.com/git-github-python/)
 * [Git Commands Every Software Engineer Should Know](https://www.jointaro.com/blog/git-commands-every-engineer-should-know-stop-using-version-control-incorrectly/)
