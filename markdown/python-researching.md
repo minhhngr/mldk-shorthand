@@ -33,6 +33,7 @@
 * [Working With Classes in Python](https://blog.martinfitzpatrick.com/python-classes/)
 * [Creating a Zip Archive of a Directory in Python](https://stackabuse.com/creating-a-zip-archive-of-a-directory-in-python/s)
 * [Differences Between Python's defaultdict and dict](https://stackabuse.com/differences-between-pythons-defaultdict-and-dict/)
+* [Higher Order Function](https://www.techbeamers.com/higher-order-functions-in-python/?ref=dailydev)
 
 ## Python in Excel
 
