@@ -50,30 +50,58 @@ Pip is the official package manager for Python. It is a simple and lightweight t
  pip freeze | cut -d "@" -f1 | xargs pip uninstall -y  # Have packages installed directly from github/gitlab
 ```
 
+### Pip Usage
+
+1. Create virtual environment
+
+```sh
+ python3 -m venv venv
+```
+
+2. Install package manager
+
+```sh
+ pip install $Package
+```
+
 ---
 
 ## Poetry
 
 Poetry is a newer tool that is similar to Pipenv. It provides a more comprehensive solution for managing Python packages, including features for dependency management, packaging, and distribution. Poetry is a good choice if you need a tool that can handle all aspects of your Python project lifecycle.
 
-* [Poetry documentation](https://python-poetry.org/docs/)
+* [Documentation](https://python-poetry.org/docs/)
+* [Configuration](https://python-poetry.org/docs/configuration/)
 
 ### Poetry CLI
 
+* [Poetry CLI](https://python-poetry.org/docs/master/cli/)
+
 ```sh
- poetry new <project-name>              # Create a new project
- poetry add <library>                   # Add a new lib
- poetry remove <library>                # Remove a lib
- poetry update <library>                # Update a lib
- poetry run which python                # Get venv path
- poetry run python app.py               # Run app
- poetry run python -m unittest discover # Run tests
- poetry run test                        # Run script
- poetry show                            # Show dependencies
- poetry config --list                   # List configuration
+ poetry new <project-name>                                   # Create a new project
+ poetry add <library>                                        # Add a new lib
+ poetry remove <library>                                     # Remove a lib
+ poetry update <library>                                     # Update a lib
+ poetry run which python                                     # Get venv path
+ poetry run python app.py                                    # Run app
+ poetry run python -m unittest discover                      # Run tests
+ poetry run test                                             # Run script
+ poetry show                                                 # Show dependencies
+ poetry show --tree
+ poetry config --list                                        # List configuration
+ poetry export -f requirements.txt --output requirements.txt # Export to requirements.txt file
+ poetry env list                                             # shows the name of the current environment
+ poetry env remove <current environment>
+ poetry install                                              # will create a new environment using your updated configuration
 ```
 
 ### Poetry Usage
+
+1. poetry config
+    * ```poetry config virtualenvs.create true```
+    * ```poetry config virtualenvs.in-project true```
+2. poetry install
+3. poetry shell
 
 #### Example
 
