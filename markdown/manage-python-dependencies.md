@@ -45,9 +45,21 @@ Pip is the official package manager for Python. It is a simple and lightweight t
  pip install -r requirements.txt
  pip freeze > requirements.txt
  pip uninstall -r requirements.txt -y                  # In case installed via requirements.txt
+```
+
+```sh
+"""
+Clean up environment in python3, if forgot use virtual env
+"""
+# Unix/MacOS
  pip freeze | xargs pip uninstall -y
  pip freeze | grep -v "^-e"  | xargs pip uninstall -y  # In case have packages installed via VCS
  pip freeze | cut -d "@" -f1 | xargs pip uninstall -y  # Have packages installed directly from github/gitlab
+
+# Windows
+ pip freeze | ForEach-Object { pip uninstall -y $_ }
+ pip freeze | ForEach-Object { if ($_ -notmatch "^-e") { pip uninstall -y $_ } }
+ pip freeze | ForEach-Object { pip uninstall -y ($_.Split('@')[0]) }
 ```
 
 ### Pip Usage
