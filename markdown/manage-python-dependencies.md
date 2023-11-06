@@ -52,13 +52,13 @@ Pip is the official package manager for Python. It is a simple and lightweight t
 
 ### Pip Usage
 
-1. Create virtual environment
+1/ Create virtual environment
 
 ```sh
  python3 -m venv venv
 ```
 
-2. Install package manager
+2/ Install package manager
 
 ```sh
  pip install $Package
