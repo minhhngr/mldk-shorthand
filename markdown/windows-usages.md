@@ -23,6 +23,7 @@
 #### CLI-Powershell
 
 * [Execution Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.3)
+* [Powershell](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/powershell)
 
 ```sh
  Get-ExecutionPolicy  # Get execution (Default: -Scope CurrentUser)
@@ -59,3 +60,10 @@ Install with PowerShell.exe
 ```batch
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+
+## MS-Docs
+
+* [Windows Command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+* [Category-MS-DOS](https://devblogs.microsoft.com/commandline/category/ms-dos/)
+* [MS DOS](https://www.computerhope.com/msdos.htm)
+* [MS-DOS and command line](https://www.computerhope.com/overview.htm)

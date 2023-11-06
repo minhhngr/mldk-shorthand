@@ -6,6 +6,11 @@
 * [Is It Always Best to Reduce Code Lines?](https://www.codemotion.com/magazine/backend/is-it-always-best-to-reduce-code-lines/)
 * [The Ultimate Code Review Checklist for Developers](https://www.codemotion.com/magazine/backend/code-review-checklist-for-developers/?ref=dailydev)
 
+## Idle-Tools
+
+* [Visual Studio Docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/main/docs/ide)
+* [Shell commands](https://www.ahinc.com/support/aix-101/shell-commands/)
+
 ## Report
 
 * [Allure](https://github.com/allure-framework/allure2)
