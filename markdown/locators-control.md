@@ -15,6 +15,16 @@
 * [Evaluate and validate XPath/CSS selectors in Chrome Developer Tools
 ](https://yizeng.me/2014/03/23/evaluate-and-validate-xpath-css-selectors-in-chrome-developer-tools/)
 
+### Get Text in Console log and create constructor
+
+```javascript
+$$('.navCategory > ul > li > a').forEach(e => console.log(e.textContent.toLowerCase().replace(/[\s,&]+/g, '_') + ' = "' + e.textContent + '"'));
+
+const modifiedStrings = $$('.navCategory > ul > li > a').map(e => e.textContent.toLowerCase().replace(/[\s,&]+/g, '_') + ' = "' + e.textContent + '"');
+
+console.log(modifiedStrings);
+```
+
 ### Python
 
 ```python
