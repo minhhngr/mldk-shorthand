@@ -15,7 +15,15 @@
 - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 Optional
-- https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+
+ZSH Autosuggestions
+(https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+- Clone repository: git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+- Open your ssh: nano ~/.zshrc
+- Add the plugins: plugins=(git zsh-autosuggestions)
+- (Optional) Change style color:
+  - Below the "Set personal aliases ...., run 'alias'" added: ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bold,bg=#ff00ff,bold"
+- Apply changes: source ~/.zshrc
 
 ## Brew install
 
@@ -34,6 +42,16 @@ Optional
     We recommend that you install GCC
     - brew install gcc
 
+Added `brew` to `zsh`
+If using `zsh` need to check, maybe only on the WSL 
+(Issue brew is lost when shutdown the WSL)
+
+- Step 1: nano ~/.zshrc
+- Step 2: Below the "Set personal aliases ......., run 'alias'"
+- Step 3: Added path to the line (like example above install)
+  - (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/minhhuynh-ubuntu/.zshrc
+  - eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 ### Brew Software
 
 #### Python3
@@ -46,3 +64,24 @@ Optional
 #### Java 
  - brew install openjdk
  - brew install openjdk@8
+
+# Network Analysis Tools Setup Guide
+
+Follow these installation instructions to set up the tools on your system.
+
+### Ubuntu/Debian
+
+To install the tools on Ubuntu or Debian systems, open your terminal and execute:
+
+```bash
+sudo apt update
+sudo apt install net-tools iproute2 nmap traceroute
+```
+
+### CentOS/Red Hat
+
+```bash
+sudo yum update
+sudo yum install net-tools iproute nmap traceroute
+```
+
