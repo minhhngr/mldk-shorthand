@@ -11,7 +11,7 @@
 
 ## Oh my ZSH
 
-- sudo apt install zsh
+- sudo apt install zsh (sudo apt-get install zsh)
 - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 Optional
@@ -27,6 +27,7 @@ ZSH Autosuggestions
 
 ## Brew install
 
+Added `brew` to `Bash`
 - Step 1: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 - Step 2: Follow 'next steps' in shell
 
@@ -43,8 +44,6 @@ ZSH Autosuggestions
     - brew install gcc
 
 Added `brew` to `zsh`
-If using `zsh` need to check, maybe only on the WSL 
-(Issue brew is lost when shutdown the WSL)
 
 - Step 1: nano ~/.zshrc
 - Step 2: Below the "Set personal aliases ......., run 'alias'"
@@ -74,8 +73,8 @@ Follow these installation instructions to set up the tools on your system.
 To install the tools on Ubuntu or Debian systems, open your terminal and execute:
 
 ```bash
-sudo apt update
-sudo apt install net-tools iproute2 nmap traceroute
+sudo apt-get update
+sudo apt-get install net-tools iproute2 nmap traceroute
 ```
 
 ### CentOS/Red Hat
