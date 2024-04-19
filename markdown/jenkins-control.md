@@ -4,9 +4,11 @@
 
 TBD...
 
-## Unix (MacOSX / Ubuntu / CentOS)
+## Unix (MacOSX / Ubuntu / CentOS / WSL)
 
 ### Installation
+
+#### WSL
 
 (Brew)
 
