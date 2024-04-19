@@ -10,5 +10,5 @@ WSL (brew)
  brew install nginx
 ```
 
-root: /home/linuxbrew/.linuxbrew/etc/nginx
-path: /home/linuxbrew/.linuxbrew/var/
+- root: /home/linuxbrew/.linuxbrew/etc/nginx
+- path: /home/linuxbrew/.linuxbrew/var/
