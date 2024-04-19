@@ -4,6 +4,59 @@
 
 ### Selenium vs Cypress
 
+### Selenium
+
+#### Examples
+
+Tree Folder Structure for Page Object Model (POM)
+
+SeleniumProject/
+├── driver/
+│   ├── chromedriver
+│   └── geckodriver
+├── resources/
+│   └── config.json
+├── tests/
+│   ├── test_login.py
+│   └── test_checkout.py
+├── pages/
+│   ├── login_page.py
+│   ├── dashboard_page.py
+│   └── checkout_page.py
+├── utils/
+│   ├── constants.py
+│   ├── logger.py
+│   └── assertions.py
+└── reports/
+    └── test_reports
+
+Tree Folder Structure for Page Object Model with Components (POMC)
+
+SeleniumProject/
+├── driver/
+│   ├── chromedriver
+│   └── geckodriver
+├── resources/
+│   └── config.json
+├── tests/
+│   ├── test_login.py
+│   └── test_checkout.py
+├── pages/
+│   ├── login_page.py
+│   ├── dashboard_page.py
+│   └── checkout_page.py
+├── components/
+│   ├── header.py
+│   ├── footer.py
+│   ├── navigation_bar.py
+│   └── search_box.py
+├── utils/
+│   ├── constants.py
+│   ├── logger.py
+│   └── assertions.py
+└── reports/
+    └── test_reports
+
 ### Design Pattern
 
 ![Most used DP](../resources/images/design-pattern.gif)
