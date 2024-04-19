@@ -10,6 +10,7 @@
 
 Tree Folder Structure for Page Object Model (POM)
 
+```text
 SeleniumProject/
 ├── driver/
 │   ├── chromedriver
@@ -29,9 +30,11 @@ SeleniumProject/
 │   └── assertions.py
 └── reports/
     └── test_reports
+```
 
 Tree Folder Structure for Page Object Model with Components (POMC)
 
+```text
 SeleniumProject/
 ├── driver/
 │   ├── chromedriver
@@ -56,6 +59,7 @@ SeleniumProject/
 │   └── assertions.py
 └── reports/
     └── test_reports
+```
 
 ### Design Pattern
 
