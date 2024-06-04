@@ -102,10 +102,10 @@ This document outlines the key questions to ask and steps to follow when testing
 - [ ] Validate cluster's self-healing capabilities
 
 ## Application Integration Tests
-- [ ] Test ACE service/application database operations
+- [ ] Test service/application database operations
 - [ ] Verify Authorization Service database transactions
 - [ ] Check API Gateway caching mechanisms
-- [ ] Ensure Connector Selector API functions correctly via the Gateway
+- [ ] Ensure API functions correctly via the Gateway
 
 ## Monitoring and Alerts
 - [ ] Set up monitoring for Redis cluster (e.g., Redis Sentinel, Prometheus)
