@@ -63,10 +63,60 @@ This document outlines the key questions to ask and steps to follow when testing
     - Have you set up authentication and encryption for Redis connections?
     - Do you have access control and permissions correctly configured for Redis nodes?
 
-## Steps for Testing
+-----
 
-### Load Testing
+# Redis Cluster Testing Checklist
 
-1. Use `redis-benchmark` to test the cluster's performance:
-   ```bash
-   redis-benchmark -h 240ecprd01 -p 6379 -n 100000 -c 50 -d 256
+## Pre-requisites
+- [ ] Ensure all Redis nodes are up and running
+- [ ] Verify network connectivity between all nodes in the cluster
+- [ ] Install Redis CLI on the machine where tests will be run
+
+## Configuration Verification
+- [ ] Check Redis version compatibility across all nodes
+- [ ] Validate the cluster configuration files for each node
+- [ ] Confirm the master-slave relationship is correctly set up
+
+## Basic Functionality Tests
+- [ ] Connect to the cluster using Redis CLI
+- [ ] Execute basic read/write operations
+  - [ ] SET key value
+  - [ ] GET key
+- [ ] Test data distribution across nodes
+
+## Replication Tests
+- [ ] Verify data replication from master to slaves
+  - [ ] Insert data on the master node
+  - [ ] Check data presence on slave nodes
+- [ ] Simulate master node failure and observe slave promotion
+- [ ] Verify data consistency post failover
+
+## Performance Tests
+- [ ] Measure read/write latency
+- [ ] Benchmark throughput using a tool like `redis-benchmark`
+- [ ] Perform load testing with concurrent connections
+
+## Resilience and Recovery Tests
+- [ ] Simulate network partition and recovery
+- [ ] Test node restart and rejoining the cluster
+- [ ] Validate cluster's self-healing capabilities
+
+## Application Integration Tests
+- [ ] Test ACE service/application database operations
+- [ ] Verify Authorization Service database transactions
+- [ ] Check API Gateway caching mechanisms
+- [ ] Ensure Connector Selector API functions correctly via the Gateway
+
+## Monitoring and Alerts
+- [ ] Set up monitoring for Redis cluster (e.g., Redis Sentinel, Prometheus)
+- [ ] Configure alerts for critical metrics (e.g., memory usage, CPU usage, node availability)
+
+## Post-Testing
+- [ ] Review logs for any errors or warnings
+- [ ] Document test results and any issues found
+- [ ] Plan for any necessary adjustments or fixes
+
+## Conclusion
+- [ ] Summarize the test outcomes
+- [ ] Recommend next steps based on findings
+- [ ] Ensure the cluster is stable and ready for production use
