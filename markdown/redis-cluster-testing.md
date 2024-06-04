@@ -52,7 +52,7 @@ This document outlines the key questions to ask and steps to follow when testing
 ### Application Integration
 
 11. **Can your applications connect and interact with the Redis Cluster correctly?**
-    - Can services and applications such as ACE, Authorization Service, and API Gateway connect and use the Redis Cluster without errors?
+    - Can services and applications such as Authorization Service, and API Gateway connect and use the Redis Cluster without errors?
 
 12. **Is the performance of your applications affected by the Redis Cluster?**
     - Do applications run smoothly and efficiently when using the Redis Cluster?
